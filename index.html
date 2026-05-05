@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--UTF‑8 is a standard that allows the browser to correctly display letters, symbols, and special characters from many languages.-->
+    <meta charset="UTF-8" />
+    <!--Mmakes website responsive, ensuring it displays correctly and at the right size on all devices.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halal Bites</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <body>
+    <!-- NAVBAR -->
+     <!--navbar-expand-md: This controls when the navbar collapses into a hamburger menu. On medium and larger screens, menu items are shown horizontally-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <!--href="#": This means the link will navigate to the top of the page when you click on "Halal Bites"-->
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/images/logo.png"
+            alt="Halal Bites Logo"
+            class="me-2"
+            style="height: 40px;"
+          />Halal Bites</a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!--navbar-nav: This is a Bootstrap navbar class that: Styles list items horizontally (instead of bullets) Applies spacing between links Makes links look like navigation items Enables responsive behavior (collapse/expand)-->
+          <!--ms-auto: This is a Bootstrap utility class that applies "margin-left: auto" to the element, which pushes the navigation links to the right side of the navbar.-->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html" target="_blank">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero text-white text-center d-flex align-items-center">
+      <div class="container">
+        <h1>Delicious Halal Food Delivered Fresh</h1>
+        <p>Order your favourite meals from our kitchen to your door</p>
+        
+      </div>
+    </section>
+
+    <section class="features py-5 bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Feature 1 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="icon-circle">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="mt-3">100% Halal Certified</h5>
+              <p>
+                All our ingredients are carefully sourced and certified halal
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="icon-circle">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="mt-3">Fresh Daily</h5>
+              <p>Prepared fresh every day with the finest ingredients</p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <div class="icon-circle">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="mt-3">Traditional Recipes</h5>
+              <p>Authentic recipes passed down through generations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 text-center">
+  <h2 class="mb-4">Signature Dishes</h2>
+
+  <div class="row">
+
+    <!-- Dish 1 -->
+    <div class="col-md-4 mb-5">
+      <div class="card shadow-sm">
+        <img src="assets/images/lamb-platter.webp" class="card-img-top" alt="Lamb Platter">
+        <div class="card-body">
+          <h5 class="card-title">Lamb Platter</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 2 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="assets/images/mixed-meat-platter.jpeg" class="card-img-top" alt="Mixed Meat Platter">
+        <div class="card-body">
+          <h5 class="card-title">Mixed Meat Platter</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 3 -->
+    <div class="col-md-4 mb-5">
+      <div class="card shadow-sm">
+        <img src="assets/images/kebabmeal.jpg" class="card-img-top" alt="Kebab Meal">
+        <div class="card-body">
+          <h5 class="card-title">Kebab Meal</h5>
+          <p class="card-text">Crispy falafel served with hummus and vegetables.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 3 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="assets/images/shawarma.jpg" class="card-img-top" alt="Shawarma">
+        <div class="card-body">
+          <h5 class="card-title">Shawarma</h5>
+          <p class="card-text">Crispy spicy chicken with fresh lettuce and sauce.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 5 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="assets/images/chicken-biryani.jpeg" class="card-img-top" alt="Chicken Biryani">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Biryani</h5>
+          <p class="card-text">Loaded with halal chicken, cheese and herbs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 6-->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="assets/images/falafel-platter.jpeg" class="card-img-top" alt="Doner Kebab">
+        <div class="card-body">
+          <h5 class="card-title">Falafel Platter</h5>
+          <p class="card-text">Crispy falafel served with hummus and vegetables.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OUR COMMITMENT SECTION -->
+<section class="commitment py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="mb-3">Our Commitment</h2>
+        <p class="lead">Beyond great food - our responsibility to our community</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Halal Certified Column -->
+      <div class="col-lg-6">
+        <div class="commitment-card h-100">
+          <h3 class="mb-4 text-success">100% Halal Certified</h3>
+          <p class="mb-4">
+            All our meat is sourced from certified halal suppliers and prepared according to Islamic dietary laws. We maintain strict standards and regular audits to ensure compliance.
+          </p>
+          <p class="mb-4">
+            Our certification is through the Halal Monitoring Committee - UK, guaranteeing the highest standards of halal food preparation.
+          </p>
+
+          <div class="commitment-list">
+            <ul class="list-unstyled">
+              <li><i class="fa-solid fa-check text-success me-2"></i>Certified halal meat suppliers</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Separate preparation areas</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Regular third-party audits</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Staff trained in halal standards</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Locally sourced vegetables when possible</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Environmental Sustainability Column -->
+      <div class="col-lg-6">
+        <div class="commitment-card h-100">
+          <h3 class="mb-4 text-primary">Environmental Sustainability</h3>
+          <p class="mb-4">
+            We're committed to reducing our environmental impact through sustainable practices in every aspect of our operations.
+          </p>
+          <p class="mb-4">
+            From sourcing ingredients locally to minimizing waste, we believe in being stewards of the environment for future generations.
+          </p>
+
+          <div class="commitment-list">
+            <ul class="list-unstyled">
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Compostable takeout containers</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Energy-efficient kitchen equipment</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Waste reduction program</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Locally sourced ingredients</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Eco-friendly packaging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+      <p>© 2026 Halal Bites | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
