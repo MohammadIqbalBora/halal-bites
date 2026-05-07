@@ -309,3 +309,11 @@ section img {
     background-color:  lightgrey;
 }
 
+.logo-img {
+  height: 40px;
+}
+
+.thank-you-message {
+  display: none;
+}
+
