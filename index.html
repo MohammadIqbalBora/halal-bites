@@ -10,26 +10,17 @@
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="assets/images/family-platter.webp"
-    /></head
-  >>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>>
   <body>
     <!-- NAVBAR -->
-    <!--navbar-expand-md: This controls when the navbar collapses into a hamburger menu. On medium and larger screens, menu items are shown horizontally-->
+     <!--navbar-expand-md: This controls when the navbar collapses into a hamburger menu. On medium and larger screens, menu items are shown horizontally-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
       <div class="container">
         <!--href="#": This means the link will navigate to the top of the page when you click on "Halal Bites"-->
@@ -38,40 +29,21 @@
             src="assets/images/logo.webp"
             alt="Halal Bites Logo"
             class="me-2"
-            style="height: 40px"
-          />Halal Bites</a
-        >
+            style="height: 40px;"
+          />Halal Bites</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        
         <div class="collapse navbar-collapse" id="navbarNav">
           <!--navbar-nav: This is a Bootstrap navbar class that: Styles list items horizontally (instead of bullets) Applies spacing between links Makes links look like navigation items Enables responsive behavior (collapse/expand)-->
           <!--ms-auto: This is a Bootstrap utility class that applies "margin-left: auto" to the element, which pushes the navigation links to the right side of the navbar.-->
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html" target="_blank">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html" target="_blank">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html" target="_blank"
-                >Contact</a
-              >
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html" target="_blank">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -86,28 +58,31 @@
     </section> -->
 
     <!-- HERO SECTION (Optimized for performance) -->
-    <section class="hero text-white text-center d-flex align-items-center">
-      <!-- ✅ LCP Image (now prioritised properly) -->
-      <img
-        src="assets/images/family-platter.webp"
-        alt="Halal food platter"
-        class="hero-img"
-        fetchpriority="high"
-        loading="eager"
-        decoding="async"
-        width="1920"
-        height="1080"
-      />
+<section class="hero text-white text-center d-flex align-items-center">
 
-      <!-- ✅ Dark overlay -->
-      <div class="overlay"></div>
+  <!-- ✅ LCP Image (now prioritised properly) -->
+  <img 
+    src="assets/images/family-platter.webp"
+    alt="Halal food platter"
+    class="hero-img"
+    fetchpriority="high"
+    loading="eager"
+    decoding="async"
+    width="1920"
+    height="1080"
+  >
 
-      <!-- ✅ Hero content -->
-      <div class="container position-relative">
-        <h1>Delicious Halal Food Delivered Fresh</h1>
-        <p>Order your favourite meals from our kitchen to your door</p>
-      </div>
-    </section>
+  <!-- ✅ Dark overlay -->
+  <div class="overlay"></div>
+
+  <!-- ✅ Hero content -->
+  <div class="container position-relative">
+    <h1>Delicious Halal Food Delivered Fresh</h1>
+    <p>Order your favourite meals from our kitchen to your door</p>
+  </div>
+
+</section>
+
 
     <section class="features py-5 bg-light text-center">
       <div class="container">
@@ -154,113 +129,53 @@
     <section class="container my-5 text-center">
       <h2 class="mb-4">Signature Dishes</h2>
 
-      <div
-        id="signatureCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+      <div id="signatureCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#signatureCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Lamb Platter"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#signatureCarousel"
-            data-bs-slide-to="1"
-            aria-label="Mixed Meat Platter"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#signatureCarousel"
-            data-bs-slide-to="2"
-            aria-label="Kebab Meal"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#signatureCarousel"
-            data-bs-slide-to="3"
-            aria-label="Shawarma"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#signatureCarousel"
-            data-bs-slide-to="4"
-            aria-label="Chicken Biryani"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#signatureCarousel"
-            data-bs-slide-to="5"
-            aria-label="Falafel Platter"
-          ></button>
+          <button type="button" data-bs-target="#signatureCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Lamb Platter"></button>
+          <button type="button" data-bs-target="#signatureCarousel" data-bs-slide-to="1" aria-label="Mixed Meat Platter"></button>
+          <button type="button" data-bs-target="#signatureCarousel" data-bs-slide-to="2" aria-label="Kebab Meal"></button>
+          <button type="button" data-bs-target="#signatureCarousel" data-bs-slide-to="3" aria-label="Shawarma"></button>
+          <button type="button" data-bs-target="#signatureCarousel" data-bs-slide-to="4" aria-label="Chicken Biryani"></button>
+          <button type="button" data-bs-target="#signatureCarousel" data-bs-slide-to="5" aria-label="Falafel Platter"></button>
         </div>
         <div class="carousel-inner rounded shadow-sm overflow-hidden">
           <div class="carousel-item active">
-            <img
-              src="assets/images/lamb-platter.webp"
-              class="d-block w-100"
-              alt="Lamb Platter"
-            />
+            <img src="assets/images/lamb-platter.webp" class="d-block w-100" alt="Lamb Platter" loading="lazy">
             <div class="carousel-caption d-none d-md-block">
               <h3>Lamb Platter</h3>
               <p>Succulent halal lamb served with rice and vegetables.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/images/mixed-meat-platter.webp"
-              class="d-block w-100"
-              alt="Mixed Meat Platter"
-            />
+            <img src="assets/images/mixed-meat-platter.webp" class="d-block w-100" alt="Mixed Meat Platter" loading="lazy">
             <div class="carousel-caption d-none d-md-block">
               <h3>Mixed Meat Platter</h3>
               <p>A generous feast of mixed meats and fresh sides.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/images/kebabmeal.webp"
-              class="d-block w-100"
-              alt="Kebab Meal"
-            />
+            <img src="assets/images/kebabmeal.webp" class="d-block w-100" alt="Kebab Meal" loading="lazy">
             <div class="carousel-caption d-none d-md-block">
               <h3>Kebab Meal</h3>
               <p>Flavourful kebabs with fresh salad and warm bread.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/images/shawarma.webp"
-              class="d-block w-100"
-              alt="Shawarma"
-            />
+            <img src="assets/images/shawarma.webp" class="d-block w-100" alt="Shawarma" loading="lazy">
             <div class="carousel-caption d-none d-md-block">
               <h3>Shawarma</h3>
               <p>Spicy chicken shawarma wrapped with crisp vegetables.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/images/chicken-biryani.webp"
-              class="d-block w-100"
-              alt="Chicken Biryani"
-            />
+            <img src="assets/images/chicken-biryani.webp" class="d-block w-100" alt="Chicken Biryani" loading="lazy">
             <div class="carousel-caption d-none d-md-block">
               <h3>Chicken Biryani</h3>
               <p>Aromatic biryani layered with tender halal chicken.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="assets/images/falafel-platter.webp"
-              class="d-block w-100"
-              alt="Falafel Platter"
-            />
+            <img src="assets/images/falafel-platter.webp" class="d-block w-100" alt="Falafel Platter" loading="lazy">
             <div class="carousel-caption d-none d-md-block">
               <h3>Falafel Platter</h3>
               <p>Crispy falafel with hummus, salad, and fresh pita.</p>
@@ -268,127 +183,78 @@
           </div>
         </div>
 
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#signatureCarousel"
-          data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-bs-target="#signatureCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#signatureCarousel"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#signatureCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
 
-    <!-- OUR COMMITMENT SECTION -->
-    <section class="commitment py-5 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <h2 class="mb-3">Our Commitment</h2>
-            <p class="lead">
-              Beyond great food - our responsibility to our community
-            </p>
-          </div>
-        </div>
+<!-- OUR COMMITMENT SECTION -->
+<section class="commitment py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="mb-3">Our Commitment</h2>
+        <p class="lead">Beyond great food - our responsibility to our community</p>
+      </div>
+    </div>
 
-        <div class="row g-4">
-          <!-- Halal Certified Column -->
-          <div class="col-lg-6">
-            <div class="commitment-card h-100">
-              <h3 class="mb-4 text-success">100% Halal Certified</h3>
-              <p class="mb-4">
-                All our meat is sourced from certified halal suppliers and
-                prepared according to Islamic dietary laws. We maintain strict
-                standards and regular audits to ensure compliance.
-              </p>
-              <p class="mb-4">
-                Our certification is through the Halal Monitoring Committee -
-                UK, guaranteeing the highest standards of halal food
-                preparation.
-              </p>
+    <div class="row g-4">
+      <!-- Halal Certified Column -->
+      <div class="col-lg-6">
+        <div class="commitment-card h-100">
+          <h3 class="mb-4 text-success">100% Halal Certified</h3>
+          <p class="mb-4">
+            All our meat is sourced from certified halal suppliers and prepared according to Islamic dietary laws. We maintain strict standards and regular audits to ensure compliance.
+          </p>
+          <p class="mb-4">
+            Our certification is through the Halal Monitoring Committee - UK, guaranteeing the highest standards of halal food preparation.
+          </p>
 
-              <div class="commitment-list">
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fa-solid fa-check text-success me-2"></i>Certified
-                    halal meat suppliers
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check text-success me-2"></i>Separate
-                    preparation areas
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check text-success me-2"></i>Regular
-                    third-party audits
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check text-success me-2"></i>Staff
-                    trained in halal standards
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check text-success me-2"></i>Locally
-                    sourced vegetables when possible
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Environmental Sustainability Column -->
-          <div class="col-lg-6">
-            <div class="commitment-card h-100">
-              <h3 class="mb-4 text-primary">Environmental Sustainability</h3>
-              <p class="mb-4">
-                We're committed to reducing our environmental impact through
-                sustainable practices in every aspect of our operations.
-              </p>
-              <p class="mb-4">
-                From sourcing ingredients locally to minimizing waste, we
-                believe in being stewards of the environment for future
-                generations.
-              </p>
-
-              <div class="commitment-list">
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fa-solid fa-leaf text-primary me-2"></i
-                    >Compostable takeout containers
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-leaf text-primary me-2"></i
-                    >Energy-efficient kitchen equipment
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-leaf text-primary me-2"></i>Waste
-                    reduction program
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-leaf text-primary me-2"></i>Locally
-                    sourced ingredients
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-leaf text-primary me-2"></i
-                    >Eco-friendly packaging
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="commitment-list">
+            <ul class="list-unstyled">
+              <li><i class="fa-solid fa-check text-success me-2"></i>Certified halal meat suppliers</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Separate preparation areas</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Regular third-party audits</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Staff trained in halal standards</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Locally sourced vegetables when possible</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
+      <!-- Environmental Sustainability Column -->
+      <div class="col-lg-6">
+        <div class="commitment-card h-100">
+          <h3 class="mb-4 text-primary">Environmental Sustainability</h3>
+          <p class="mb-4">
+            We're committed to reducing our environmental impact through sustainable practices in every aspect of our operations.
+          </p>
+          <p class="mb-4">
+            From sourcing ingredients locally to minimizing waste, we believe in being stewards of the environment for future generations.
+          </p>
+
+          <div class="commitment-list">
+            <ul class="list-unstyled">
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Compostable takeout containers</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Energy-efficient kitchen equipment</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Waste reduction program</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Locally sourced ingredients</li>
+              <li><i class="fa-solid fa-leaf text-primary me-2"></i>Eco-friendly packaging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- FOOTER -->
     <footer class="bg-dark text-white text-center p-3">
       <p>© 2026 Halal Bites | All Rights Reserved</p>
     </footer>
