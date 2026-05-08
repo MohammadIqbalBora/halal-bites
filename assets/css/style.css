@@ -1,3 +1,43 @@
+/* ========================================
+   GLOBAL STYLES (ALL PAGES)
+======================================== */
+
+/* Navbar */
+.nav-item {
+    font-weight: bold;
+    font-size: larger;
+}
+
+    .logo-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cards */
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Shared Card Images */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+
+/* ========================================
+   INDEX.HTML (HOME PAGE)
+======================================== */
+
+/* Hero Section */
 .hero {
     position: relative;
     height: 80vh;
@@ -25,11 +65,7 @@
     z-index: 2;
 }
 
-.card img {
-    height: 200px;
-    object-fit: cover;
-}
-
+/* Features */
 .features {
     background-color: #f8f9fa;
 }
@@ -48,9 +84,9 @@
 .icon-circle i {
     font-size: 28px;
     color: green;
-    
 }
 
+/* Carousel */
 #signatureCarousel .carousel-item img {
     width: 100%;
     height: 450px;
@@ -62,7 +98,7 @@
     border-radius: 0.5rem;
 }
 
-/* Commitment Section Styles */
+/* Commitment Section */
 .commitment {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
@@ -74,20 +110,18 @@
 }
 
 .commitment .lead {
-    color: #666;
+    color: black;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .commitment-card {
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     border: 1px solid #e9ecef;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .commitment-card h3 {
     font-weight: 600;
@@ -104,185 +138,147 @@
     margin-bottom: 0.75rem;
     padding: 0.5rem 0;
     border-bottom: 1px solid #f0f0f0;
-} 
+}
 
 .commitment-list ul li:last-child {
     border-bottom: none;
 }
 
-.commitment-list i {
-    font-size: 1.1rem;
+/* ========================================
+   MENU.HTML
+======================================== */
+
+main .card {
+    overflow: hidden;
 }
 
+/* ========================================
+   ABOUT.HTML
+======================================== */
 
-.feature-box h5 {
-    font-weight: bold;
+/* Hero */
+.halalbites {
+    background-color: grey;
 }
 
-.card img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.card {
-    border: none;
-    width: 18rem
-}
-
-#h2 {
-    font-weight: bold;
-}
-
+/* About Images */
 section img {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.halalbites {
-    background-color: grey;
-       
-}
-
-.about-core-values{
+/* Core Values */
+.about-core-values {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  box-shadow: gainsboro 5px 5px 5px;
-  text-align: center;
-  background-color: #f8f9fa;
+.core-value-cards .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: gainsboro 5px 5px 5px;
+    text-align: center;
+    background-color: #f8f9fa;
+    width: 300px;
+    min-height: 200px;
+    padding: 2rem;
 }
 
+/* Timeline */
 .our-journey {
-  padding: 60px 20px;
+    padding: 60px 20px;
 }
 
 .timeline {
-  position: relative;
-  max-width: 900px;
-  margin: 50px auto 0;
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto 0;
 }
 
-/* vertical line */
 .timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background: #b6f0c6;
-  transform: translateX(-50%);
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #b6f0c6;
+    transform: translateX(-50%);
 }
 
 .timeline-item {
-  display: flex;
-  position: relative;
-  margin-bottom: 50px;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .timeline-item.left {
-  justify-content: flex-end;
-  padding-right: 50%;
+    justify-content: flex-end;
+    padding-right: 50%;
 }
 
 .timeline-item.right {
-  justify-content: flex-start;
-  padding-left: 50%;
+    justify-content: flex-start;
+    padding-left: 50%;
 }
 
 .timeline-item .content {
-  max-width: 320px;
-  text-align: center;
-}
-
-.timeline-item h3 {
-  font-weight: 700;
-}
-
-.timeline-item p {
-  margin-top: 5px;
-  color: #555;
-}
-
-/* green dot */
-.timeline-item .dot {
-  position: absolute;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background: #00a63f;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 0 5px #fff;
-}
-
-.card-staff{
-    width: 24em;
-    height: 24em;
-    padding: 0px;
+    max-width: 320px;
     text-align: center;
-
 }
 
-.nav-item {
-    font-weight: bold;
-    font-size: larger;
+.timeline-item .dot {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #00a63f;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 5px #fff;
 }
 
-/* Contact Page Styles */
+/* ========================================
+   CONTACT.HTML
+======================================== */
+
+#contactpage {
+    background-color: lightgrey;
+}
+
+/* Contact Icons */
 .contact-icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Contact Form */
 .contact-form {
     background-color: #f8f9fa;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .contact-form .form-label {
     font-weight: 600;
     color: #333;
-    margin-bottom: 10px;
 }
 
 .contact-form .form-control {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px 15px;
-    transition: border-color 0.3s;
-}
-
-.contact-form .form-control:focus {
-    border-color: #dc3545;
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 .contact-form textarea.form-control {
     resize: vertical;
 }
 
-.map-container {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card {
-    border: none;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Thank You Message Styles */
+/* Thank You Message */
 .thank-you-message {
+    display: none;
     background-color: #f0fdf4;
     border: 2px solid #22c55e;
     border-radius: 8px;
@@ -290,30 +286,18 @@ section img {
     text-align: center;
 }
 
-.thank-you-icon {
-    margin-bottom: 1rem;
-}
-
 .thank-you-message h3 {
     color: #15803d;
     font-weight: bold;
-    font-size: 1.75rem;
 }
 
-.thank-you-message p {
-    color: #4b5563;
-    font-size: 1rem;
+/* Map */
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-#contactpage {
-    background-color:  lightgrey;
+.restaurant-map {
+    border: 0;
 }
-
-.logo-img {
-  height: 40px;
-}
-
-.thank-you-message {
-  display: none;
-}
-
